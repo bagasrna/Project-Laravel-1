@@ -94,4 +94,4 @@ Route::resource('/dashboard/posts', DashboardPostController::class)->middleware(
 
 // except berfungsi untuk mematikan suatu route agar tidak bisa diakses
 // admin adalah middleware yang dibuat sendiri
-Route::resource('/dashboard/categories', AdminCategoryController::class)->except('show')->middleware('admin');
+Route::resource('/dashboard/categories', AdminCategoryController::class)->middleware('admin');
